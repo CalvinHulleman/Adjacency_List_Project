@@ -30,6 +30,7 @@ edge_color='blue', edge_alpha=0.3, edge_tickness=1,edge_text_pos=0.3,text_font='
     nx.draw_networkx_edges(G,graph_pos,width=edge_tickness,alpha=edge_alpha,edge_color=edge_color)
     nx.draw_networkx_labels(G, graph_pos,font_size=node_text_size,font_family=text_font)
     plt.show()
+    plt.savefig(r'C:\Users\calri\Documents\data_prep\Social_Network\friends.png',dpi=200)
 
 if __name__ == '__main__' :
     net = network()
