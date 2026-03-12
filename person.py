@@ -2,13 +2,11 @@ import random
 class network:
     def __init__(self):
         self.IDs = []
-    def add_IDs(self,ID):
-        self.IDs.append(ID)
     def get_new_id(self):
         while True:
             rand_int = random.randint(1000,9999)
             if rand_int not in self.IDs:
-                self.add_IDs(rand_int)
+                self.IDs.append(rand_int)
                 return rand_int
             
 class person:
